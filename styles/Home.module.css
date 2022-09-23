@@ -2,10 +2,8 @@
   @apply px-8;
 }
 
-.main {
-  @apply min-h-screen flex flex-col justify-center items-center py-16;
-
-  flex: 1;
+.article {
+  @apply flex flex-col justify-center items-center;
 }
 
 .footer {
@@ -59,9 +57,8 @@
 }
 
 .grid {
-  @apply flex justify-center items-center;
+  @apply flex justify-center items-center flex-wrap;
 
-  flex-wrap: wrap;
   max-width: 800px;
 }
 
@@ -95,11 +92,6 @@
   }
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
@@ -108,14 +100,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
+  .card {
     border-color: #222;
   }
   .code {
     background: #111;
-  }
-  .logo img {
-    filter: invert(1);
   }
 }
