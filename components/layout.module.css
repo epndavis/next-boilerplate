@@ -1,0 +1,50 @@
+.body {
+    @apply flex flex-col min-h-screen;
+}
+
+.bodyContent {
+    @apply flex-grow py-16;
+}
+
+.menu {
+    @apply flex flex-col ml-auto;
+
+    li {
+        a {
+            @apply block p-2;
+        }
+    }
+}
+
+@screen md {
+    .menu {
+        @apply flex-row;
+    }
+}
+
+.footer {
+    @apply flex justify-center items-center py-8;
+  
+    flex: 1;
+    border-top: 1px solid #eaeaea;
+  
+    a {
+      @apply flex justify-center items-center;
+  
+      flex-grow: 1;
+    }
+}
+
+.logo {
+    @apply h-4 ml-2;
+}
+
+@media (prefers-color-scheme: dark) {
+    .footer {
+      border-color: #222;
+    }
+
+    .logo img {
+        filter: invert(1);
+    }
+}
