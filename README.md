@@ -17,10 +17,6 @@ First, setup the environment
 npm ci
 ```
 
-```bash
-npm run prepare
-```
-
 Next, run the development server:
 
 ```bash
