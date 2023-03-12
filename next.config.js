@@ -15,7 +15,10 @@ const nextConfig = {
     }
     return config
   },
-  output: 'standalone'
+  output: 'standalone',
+  experimental: {
+    appDir: true,
+  }
 }
 
 module.exports = nextConfig
